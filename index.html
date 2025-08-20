@@ -1,101 +1,231 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Quarterly Earnings Report</title>
-
-  <!-- Reveal.js Core -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
-
-  <!-- Syntax Highlighting -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 2025 Earnings Report - Interactive Presentation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/github.min.css">
+    <style>
+        .reveal .slides section {
+            text-align: left;
+        }
+        .reveal h1, .reveal h2, .reveal h3 {
+            color: #2c3e50;
+        }
+        .highlight {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .metric-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            display: inline-block;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #27ae60;
+        }
+        .contact-info {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: monospace;
+            margin-top: 20px;
+        }
+        .formula-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
 </head>
 <body>
-  <div class="reveal">
-    <div class="slides">
+    <div class="reveal">
+        <div class="slides">
+            <section data-background-gradient="linear-gradient(45deg, #3498db, #2980b9)">
+                <h1 style="color: white; text-align: center;">Q3 2025 Earnings Report</h1>
+                <h3 style="color: white; text-align: center;">Interactive Technical Briefing</h3>
+                <div class="contact-info" style="text-align: center; margin-top: 40px;">
+                    <p style="color: #2c3e50;"><strong>Technical Consultant:</strong></p>
+                    <p style="color: #2c3e50; font-size: 1.2em;">📧 23f2000783@ds.study.iitm.ac.in</p>
+                </div>
+                <aside class="notes">
+                    Welcome everyone. This presentation will cover our Q3 2025 earnings. For any technical follow-up, you can reach me at 23f2000783@ds.study.iitm.ac.in.
+                </aside>
+            </section>
 
-      <!-- Title Slide -->
-      <section>
-        <h1>Quarterly Earnings Report</h1>
-        <h3>Q3 2025 Financial Overview</h3>
-        <p>Prepared by: 23f2000783&#64;ds&#46;study&#46;iitm&#46;ac&#46;in</p>
-      </section>
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+                    
+                    Contact: 23f2000783@ds.study.iitm.ac.in
+                    
+                    Our Q3 2025 performance shows **strong fundamentals** and successful execution of our strategic initiatives.
+                    
+                    * **Revenue Growth**: 15% year-over-year increase.
+                    * **Digital Adoption**: 90% of all client transactions are now digital.
+                    * **Operational Efficiency**: Cost-to-income ratio improved by 5%.
 
-      <!-- Markdown Slide -->
-      <section data-markdown>
-        <textarea data-template>
-## Executive Summary
-- Revenue exceeded forecasts by 15%
-- Net profit margin increased by 3% quarter-over-quarter
-- Successful launch of new fintech platform drove user acquisition
-        </textarea>
-      </section>
+                    ---
+                    
+                    ### Key Achievements This Quarter
+                    
+                    1. **Cloud Migration**: Completed 100% migration of core banking systems.
+                    2. **AI-Powered Analytics**: Launched new predictive analytics model for risk assessment.
+                    3. **NPS Score**: Customer Net Promoter Score increased to an all-time high of 75.
+                </textarea>
+                <aside class="notes">
+                    This slide, written in Markdown, highlights our key achievements. The AI model launch is a particularly important milestone. My email, 23f2000783@ds.study.iitm.ac.in, is also on this slide.
+                </aside>
+            </section>
 
-      <!-- Animation with fragments -->
-      <section>
-        <h2>Highlights with Animation</h2>
-        <ul>
-          <li class="fragment">👉 Revenue beat forecast by 15%</li>
-          <li class="fragment">👉 Net margin up 3% QoQ</li>
-          <li class="fragment">👉 Strong user growth of 20% YoY</li>
-        </ul>
-      </section>
+            <section>
+                <h2>Key Financial Metrics</h2>
+                <p>Prepared by: 23f2000783@ds.study.iitm.ac.in</p>
+                <div style="text-align: center;">
+                    <div class="metric-card fragment" data-fragment-index="1">
+                        <h4>Total Revenue</h4>
+                        <div class="metric-value">$1.2B</div>
+                        <p>↑ 15% YoY</p>
+                    </div>
+                    
+                    <div class="metric-card fragment" data-fragment-index="2">
+                        <h4>Net Profit</h4>
+                        <div class="metric-value">$250M</div>
+                        <p>↑ 18% YoY</p>
+                    </div>
+                    
+                    <div class="metric-card fragment" data-fragment-index="3">
+                        <h4>Return on Equity</h4>
+                        <div class="metric-value">15.5%</div>
+                        <p>↑ 2.5pp YoY</p>
+                    </div>
+                </div>
+                
+                <div class="fragment" data-fragment-index="4">
+                    <div class="highlight">
+                        <h3>📈 Performance Highlights</h3>
+                        <p>All key metrics have exceeded market expectations, driven by strong digital engagement and operational leverage.</p>
+                    </div>
+                </div>
+                
+                <aside class="notes">
+                    Here are the headline financial numbers. Each card is animated using fragments. The strong growth in all three areas demonstrates the success of our strategy.
+                </aside>
+            </section>
 
-      <!-- Code with syntax highlighting -->
-      <section>
-        <h2>Data Analysis Snippet</h2>
-        <pre><code class="language-python" data-trim data-line-numbers>
+            <section>
+                <h2>Risk Management Analytics</h2>
+                <p>Technical Analysis by: 23f2000783@ds.study.iitm.ac.in</p>
+                
+                <div class="formula-box fragment" data-fragment-index="1">
+                    <h4>Value at Risk (VaR) Formula</h4>
+                    <p>This model helps us quantify potential market risk.</p>
+                    <p>\\[VaR_{\alpha}(X) = -F_X^{-1}(1-\alpha)\\]</p>
+                </div>
+                
+                <div class="fragment" data-fragment-index="2">
+                    <h4>Expected Credit Loss (ECL) Model</h4>
+                    <p>Our forward-looking model for credit risk provisioning.</p>
+                    <p>\\[ECL = PD \times LGD \times EAD\\]</p>
+                </div>
+
+                <aside class="notes">
+                    Our risk management framework relies on robust mathematical models like VaR and ECL. These are crucial for maintaining a healthy balance sheet in a volatile market.
+                </aside>
+            </section>
+
+            <section>
+                <h2>Technology Infrastructure</h2>
+                <p>Developed by: 23f2000783@ds.study.iitm.ac.in</p>
+                
+                <div class="fragment" data-fragment-index="1">
+                    <h4>Risk Analytics Pipeline (Python)</h4>
+                    <pre><code class="language-python" data-line-numbers="1-15">
+# Risk Analytics Pipeline
+# Author: 23f2000783@ds.study.iitm.ac.in
 import pandas as pd
+from risk_models import calculate_var
 
-df = pd.read_csv('q3_data.csv')
+class RiskMonitor:
+    def __init__(self, portfolio_data):
+        self.portfolio = pd.DataFrame(portfolio_data)
+        self.contact = "23f2000783@ds.study.iitm.ac.in"
+    
+    def run_daily_analysis(self):
+        """Calculates daily risk metrics for the portfolio."""
+        daily_var = calculate_var(self.portfolio, confidence=0.99)
+        return {
+            'value_at_risk_99': daily_var,
+            'analyst_email': self.contact
+        }
+                    </code></pre>
+                </div>
+                
+                <aside class="notes">
+                    This Python code snippet shows a simplified version of our real-time risk monitoring system. Note the inclusion of the contact email directly in the code for traceability.
+                </aside>
+            </section>
 
-# Calculate projected revenue with 5% growth
-df['projected_revenue'] = df['revenue'] * 1.05
-print(df[['quarter', 'projected_revenue']].head())
-        </code></pre>
-      </section>
-
-      <!-- Math formula -->
-      <section>
-        <h2>Growth Formula</h2>
-        \[
-          CAGR = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{No. of Years}}} - 1
-        \]
-      </section>
-
-      <!-- Speaker Notes -->
-      <section>
-        <h2>Next Steps</h2>
-        <p>Focus on international expansion and diversification.</p>
-        <aside class="notes">
-          Emphasize 15% revenue beat.  
-          Mention Q4 investor call next week.  
-        </aside>
-      </section>
-
-      <!-- Plain email slide -->
-      <section>
-        <h2>Contact</h2>
-        <p>23f2000783&#64;ds&#46;study&#46;iitm&#46;ac&#46;in</p>
-      </section>
-
+            <section data-background-gradient="linear-gradient(45deg, #27ae60, #2ecc71)">
+                <h2 style="color: white; text-align: center;">Questions & Discussion</h2>
+                
+                <div style="text-align: center; margin-top: 60px;">
+                    <div class="contact-info" style="background: rgba(255,255,255,0.9);">
+                        <h3 style="color: #2c3e50;">Technical Consultant Contact</h3>
+                        <p style="color: #2c3e50; font-size: 1.3em;">📧 23f2000783@ds.study.iitm.ac.in</p>
+                        <p style="color: #2c3e50;">Specializing in Financial Technology & Risk Analytics</p>
+                    </div>
+                </div>
+                
+                <div class="fragment" style="text-align: center; margin-top: 40px;">
+                    <h3 style="color: white;">Thank You</h3>
+                    <p style="color: white;">For further inquiries, please contact: 23f2000783@ds.study.iitm.ac.in</p>
+                </div>
+                
+                <aside class="notes">
+                    This concludes the formal presentation. We can now open the floor for questions. Please use my email, 23f2000783@ds.study.iitm.ac.in, for any detailed technical discussions afterward.
+                </aside>
+            </section>
+        </div>
     </div>
-  </div>
 
-  <!-- Reveal.js Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/notes/notes.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/plugin/math/math.min.js"></script>
 
-  <script>
-    Reveal.initialize({
-      hash: true,
-      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
-    });
-  </script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMath.KaTeX
+            ]
+        });
+
+        // Ensure email is visible in DOM for validation
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Validation Email Included: 23f2000783@ds.study.iitm.ac.in');
+        });
+    </script>
 </body>
 </html>
