@@ -1,64 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Quarterly Earnings Report</title>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h1>Quarterly Earnings Report</h1>
-					<p>Presented by: 23f2000783@ds.study.iitm.ac.in</p>
-				</section>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Quarterly Earnings Report</title>
 
-				<section data-markdown>
-					<textarea data-template>
-						## Financial Highlights
-						- Revenue growth of 15% year-over-year.
-						- Net profit margin increased to 22%.
-						- Earnings per share (EPS) of $2.50.
-					</textarea>
-				</section>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
 
-				<section>
-					<h2>Key Metrics</h2>
-					<ul>
-						<li class="fragment">Customer Acquisition Cost (CAC) down by 10%</li>
-						<li class="fragment">Customer Lifetime Value (LTV) up by 20%</li>
-						<li class="fragment">Churn rate reduced to 5%</li>
-					</ul>
-				</section>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <h3>Q3 2025 Financial Overview</h3>
+        <p>
+          <small>Presented by: <a href="mailto:23f2000783@ds.study.iitm.ac.in">23f2000783@ds.study.iitm.ac.in</a></small>
+        </p>
+      </section>
 
-				<section>
-					<h2>Python Code for Analysis</h2>
-					<pre><code class="python" data-line-numbers="1-5">
+      <section data-markdown>
+        <textarea data-template>
+          ## Executive Summary
+          - Revenue exceeded forecasts by 15%.
+          - Net profit margin increased by 3% quarter-over-quarter.
+          - Successful launch of new fintech platform drove user acquisition.
+        </textarea>
+      </section>
+
+      <section>
+        <h2>Key Financial Metrics</h2>
+        <ul>
+          <li class="fragment"><strong>Total Revenue:</strong> $1.2 Billion</li>
+          <li class="fragment"><strong>Net Income:</strong> $250 Million</li>
+          <li class="fragment"><strong>Earnings Per Share (EPS):</strong> $1.75</li>
+          <li class="fragment fade-up"><strong>User Growth:</strong> +20% YoY</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Data Analysis Snippet</h2>
+        <p>Python script used for projecting revenue:</p>
+        <pre><code class="python" data-line-numbers="1-3|5-6">
 import pandas as pd
 
-df = pd.read_csv('earnings.csv')
-print(df.describe())
-					</code></pre>
-				</section>
+df = pd.read_csv('q3_data.csv')
 
-				<section>
-					<h2>Financial Formula: Compound Interest</h2>
-					<p>
-						The formula for compound interest is:
-						\[ A = P(1 + \frac{r}{n})^{nt} \]
-					</p>
-					<aside class="notes">
-						Explain the variables: A is the future value, P is the principal, r is the annual interest rate, n is the number of times that interest is compounded per year, and t is the number of years the money is invested for.
-					</aside>
-				</section>
-			</div>
-		</div>
-		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-		<script>
-			Reveal.initialize({
-				plugins: [ RevealMarkdown ]
-			});
-		</script>
-	</body>
+# Calculate projected revenue with 5% growth
+df['projected_revenue'] = df['revenue'] * 1.05
+print(df[['quarter', 'projected_revenue']].head())
+        </code></pre>
+      </section>
+
+      <section>
+        <h2>Growth Formula</h2>
+        <p>We use the Compound Annual Growth Rate (CAGR) to model long-term growth:</p>
+        \[ CAGR = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{No. of Years}}} - 1 \]
+        <p class="fragment">This formula helps us smooth out market volatility for a clearer view of performance.</p>
+      </section>
+
+      <section>
+        <h2>Next Steps & Outlook</h2>
+        <p>Our focus for Q4 will be on international expansion and product diversification.</p>
+        <aside class="notes">
+          Hello everyone. Remember to emphasize the 15% revenue beat on this slide. Also, remind stakeholders about the upcoming investor call next Tuesday to discuss these results in more detail. Thank them for their time.
+        </aside>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+
+  <script>
+    // Initialize RevealJS
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
+    });
+  </script>
+</body>
 </html>
