@@ -2,10 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-  />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <title>Quarterly Earnings Report</title>
 
   <!-- Reveal core & theme -->
@@ -23,7 +20,7 @@
       <section>
         <h1>Quarterly Earnings Report</h1>
         <h3>Q3 2025 Financial Overview</h3>
-        <p><small>Prepared by: <strong>23f2000783@ds.study.iitm.ac.in</strong></small></p>
+        <p><small>Prepared by: 23f2000783@ds.study.iitm.ac.in</small></p>
       </section>
 
       <!-- Markdown -->
@@ -36,22 +33,22 @@
         </textarea>
       </section>
 
-      <!-- Clear fragments slide -->
+      <!-- Explicit fragments -->
       <section>
         <h2>Highlights with Animation</h2>
         <p class="fragment">👉 Revenue beat forecast by 15%</p>
-        <p class="fragment">👉 Net margin up 3% QoQ</p>
-        <p class="fragment">👉 Strong user growth of 20% YoY</p>
+        <p class="fragment fade-in">👉 Net margin up 3% QoQ</p>
+        <p class="fragment fade-up">👉 Strong user growth of 20% YoY</p>
       </section>
 
-      <!-- Animated list -->
+      <!-- Another fragment list -->
       <section>
         <h2>Key Financial Metrics</h2>
         <ul>
           <li class="fragment">Total Revenue: $1.2B</li>
-          <li class="fragment">Net Income: $250M</li>
-          <li class="fragment">EPS: $1.75</li>
-          <li class="fragment">User Growth: +20% YoY</li>
+          <li class="fragment fade-in">Net Income: $250M</li>
+          <li class="fragment fade-up">EPS: $1.75</li>
+          <li class="fragment fade-in-then-out">User Growth: +20% YoY</li>
         </ul>
       </section>
 
@@ -82,11 +79,11 @@ print(df[['quarter', 'projected_revenue']].head())
         <h2>Next Steps</h2>
         <ul>
           <li class="fragment">Expand internationally</li>
-          <li class="fragment">Diversify products</li>
-          <li class="fragment">Optimize user acquisition cost</li>
+          <li class="fragment fade-in">Diversify products</li>
+          <li class="fragment fade-up">Optimize acquisition cost</li>
         </ul>
         <aside class="notes">
-          Mention focus areas for Q4 and upcoming investor call.
+          Mention Q4 priorities and investor call.
         </aside>
       </section>
 
