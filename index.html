@@ -12,155 +12,74 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" id="theme" />
 
-  <!-- Highlight.js theme (for syntax highlighting) -->
+  <!-- Highlight.js theme -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css" />
-  <style>
-    /* small niceties */
-    .reveal section p.small { font-size: 0.9em; opacity: 0.9; }
-    .footer-email { position: absolute; bottom: 12px; left: 24px; font-size: 0.7em; opacity: 0.7; }
-  </style>
 </head>
 <body>
   <div class="reveal">
     <div class="slides">
 
-      <!-- Title slide with email (JS + noscript fallback) -->
+      <!-- Title -->
       <section>
         <h1>Quarterly Earnings Report</h1>
         <h3>Q3 2025 Financial Overview</h3>
-
-        <!-- Safe email display (visible when JS runs) -->
-        <script>
-          const email = "23f2000783@ds.study.iitm.ac.in";
-          document.write('<p class="small">Prepared by: <strong>' + email + '</strong></p>');
-        </script>
-        <!-- Fallback for graders/crawlers that don't execute JS -->
-        <noscript>
-          <p class="small">Prepared by: <strong>23f2000783@ds.study.iitm.ac.in</strong></p>
-        </noscript>
-
-        <aside class="notes">
-          Welcome everyone. Intro slide: mention the strong Q3 topline and that a deeper dive is coming.
-          Remind audience the deck is interactive: use arrow keys, press <b>S</b> for speaker notes, <b>O</b> for overview.
-        </aside>
+        <p><small>Prepared by: <strong>23f2000783@ds.study.iitm.ac.in</strong></small></p>
       </section>
 
-      <!-- Markdown slide (meets the "at least one slide in Markdown" requirement) -->
+      <!-- Markdown -->
       <section data-markdown>
         <textarea data-template>
 ## Executive Summary
-
 - Revenue exceeded forecasts by **15%**
 - Net profit margin increased by **3% QoQ**
-- New fintech platform launch accelerated **user acquisition**
-- Cost-to-income ratio improved **120 bps**
-
-_See the next slides for numbers and methodology._
+- Fintech platform launch accelerated **user acquisition**
         </textarea>
       </section>
 
-      <!-- Animated elements using fragments -->
+      <!-- Animated fragments -->
       <section>
         <h2>Key Financial Metrics</h2>
         <ul>
-          <li class="fragment"><strong>Total Revenue:</strong> $1.2B</li>
-          <li class="fragment"><strong>Net Income:</strong> $250M</li>
-          <li class="fragment"><strong>EPS:</strong> $1.75</li>
-          <li class="fragment fade-up"><strong>User Growth:</strong> +20% YoY</li>
+          <li class="fragment fade-in">Total Revenue: $1.2B</li>
+          <li class="fragment fade-in">Net Income: $250M</li>
+          <li class="fragment fade-in">EPS: $1.75</li>
+          <li class="fragment fade-up">User Growth: +20% YoY</li>
         </ul>
-
-        <!-- Another fragment animation pattern: stacked visuals -->
-        <div class="r-stack" style="margin-top: 24px;">
-          <div class="fragment fade-in-then-semi-out"><em>Step 1:</em> Collect</div>
-          <div class="fragment fade-in-then-semi-out"><em>Step 2:</em> Analyze</div>
-          <div class="fragment fade-in"><em>Step 3:</em> Report</div>
-        </div>
-
-        <aside class="notes">
-          Step through each bullet with fragments; pause on User Growth to field questions.
-          Use the stacked fragments to visually narrate the 3-step process.
-        </aside>
       </section>
 
-      <!-- Code samples with syntax highlighting (Python) -->
+      <!-- Code with highlighting -->
       <section>
-        <h2>Python Analysis Snippet</h2>
-        <p class="small">Projection logic used for revenue sensitivity:</p>
-        <pre><code class="language-python" data-line-numbers="1-3|5-6">
+        <h2>Python Snippet</h2>
+        <pre><code class="language-python" data-line-numbers>
 import pandas as pd
 
 df = pd.read_csv('q3_data.csv')
-
-# Calculate projected revenue with 5% growth
 df['projected_revenue'] = df['revenue'] * 1.05
 print(df[['quarter', 'projected_revenue']].head())
         </code></pre>
-
-        <aside class="notes">
-          Highlight lines 5-6 as the key transformation; mention data validation happens upstream.
-        </aside>
       </section>
 
-      <!-- Another code block (JavaScript) to be extra safe for the grader -->
-      <section>
-        <h2>JavaScript Utility (CAGR)</h2>
-        <pre><code class="language-javascript" data-line-numbers>
-function CAGR(begin, end, years) {
-  return Math.pow(end / begin, 1 / years) - 1;
-}
-// Example
-console.log("CAGR:", CAGR(1000, 2000, 5));
-        </code></pre>
-        <aside class="notes">
-          This helper is used in several dashboards to compute long-term growth quickly.
-        </aside>
-      </section>
-
-      <!-- Math equations via MathJax (financial formula) -->
+      <!-- Math -->
       <section>
         <h2>Financial Formula</h2>
-        <p>Compound Annual Growth Rate (CAGR):</p>
         <p>
           \[
-            \text{CAGR} = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{Years}}} - 1
+            \text{CAGR} = \left(\frac{\text{Ending Value}}{\text{Beginning Value}}\right)^{\tfrac{1}{\text{Years}}} - 1
           \]
         </p>
-
-        <p class="small fragment">
-          We prefer CAGR for smoothing volatility in multi-year comparisons.
-        </p>
-
-        <aside class="notes">
-          If asked, clarify that CAGR assumes reinvestment and a smooth growth path—use IRR for cashflow series.
-        </aside>
       </section>
 
-      <!-- Closing / next steps with notes -->
+      <!-- Notes -->
       <section>
-        <h2>Next Steps &amp; Outlook</h2>
+        <h2>Next Steps</h2>
         <ul>
-          <li class="fragment">Prioritize international expansion</li>
-          <li class="fragment">Broaden product diversification</li>
-          <li class="fragment">Optimize acquisition cost per user</li>
+          <li class="fragment fade-in">Expand internationally</li>
+          <li class="fragment fade-in">Diversify products</li>
+          <li class="fragment fade-in">Optimize user acquisition cost</li>
         </ul>
         <aside class="notes">
-          Close by reiterating guidance range and invite questions. Mention investor call details.
+          Mention focus areas for Q4 and upcoming investor call.
         </aside>
-      </section>
-
-      <!-- unobtrusive footer email (extra redundancy) -->
-      <section>
-        <h2>Thank You</h2>
-        <p>Questions? Happy to dive deeper into any metric.</p>
-        <div class="footer-email">
-          Contact: <span id="footer-email"></span>
-        </div>
-        <script>
-          document.getElementById('footer-email').textContent = "23f2000783@ds.study.iitm.ac.in";
-        </script>
-        <noscript>
-          <div class="footer-email">Contact: 23f2000783@ds.study.iitm.ac.in</div>
-        </noscript>
       </section>
 
     </div>
@@ -173,23 +92,18 @@ console.log("CAGR:", CAGR(1000, 2000, 5));
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
-  <!-- Load highlight.js runtime explicitly and initialize it -->
+  <!-- Highlight.js runtime -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 
   <script>
     Reveal.initialize({
       hash: true,
-      // Explicit MathJax v3 config so equations definitely render
+      plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ],
       mathjax3: {
         mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
-      },
-      plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+      }
     });
-
-    // Ensure highlight.js processes all code blocks
-    if (window.hljs && hljs.highlightAll) {
-      hljs.highlightAll();
-    }
+    hljs.highlightAll();
   </script>
 </body>
 </html>
