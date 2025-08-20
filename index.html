@@ -1,22 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Quarterly Earnings Report</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css" id="theme" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css" />
+  <!-- Reveal.js core CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css">
+
+  <!-- Highlight.js for code syntax -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/monokai.min.css">
 </head>
 <body>
-
-  <!-- Put email plainly in body so grader always sees it -->
-  <p>Student Email: 23f2000783@ds.study.iitm.ac.in</p>
-
   <div class="reveal">
     <div class="slides">
-
+      
       <!-- Title Slide -->
       <section>
         <h1>Quarterly Earnings Report</h1>
@@ -24,86 +23,82 @@
         <p>Prepared by: 23f2000783@ds.study.iitm.ac.in</p>
       </section>
 
-      <!-- Markdown -->
+      <!-- Markdown Slide -->
       <section data-markdown>
         <textarea data-template>
-## Executive Summary
-- Revenue exceeded forecasts by **15%**
-- Net profit margin increased by **3% QoQ**
-- Fintech platform launch accelerated **user acquisition**
+          ## Executive Summary
+          - Revenue exceeded forecasts by 15%.
+          - Net profit margin increased by 3% quarter-over-quarter.
+          - Successful launch of new fintech platform drove user acquisition.
         </textarea>
       </section>
 
-      <!-- Fragments -->
+      <!-- Animated Highlights -->
       <section>
         <h2>Highlights with Animation</h2>
-        <p class="fragment">👉 Revenue beat forecast by 15%</p>
-        <p class="fragment fade-in">👉 Net margin up 3% QoQ</p>
-        <p class="fragment fade-up">👉 Strong user growth of 20% YoY</p>
+        <ul>
+          <li class="fragment">👉 Revenue beat forecast by 15%</li>
+          <li class="fragment">👉 Net margin up 3% QoQ</li>
+          <li class="fragment">👉 Strong user growth of 20% YoY</li>
+        </ul>
       </section>
 
-      <!-- Code -->
+      <!-- Code Snippet -->
       <section>
-        <h2>Python Snippet</h2>
-        <pre><code class="language-python" data-line-numbers>
+        <h2>Data Analysis Snippet</h2>
+        <p>Python script used for projecting revenue:</p>
+        <pre><code class="language-python" data-trim data-line-numbers="1-3|5-6">
 import pandas as pd
 
 df = pd.read_csv('q3_data.csv')
+
+# Calculate projected revenue with 5% growth
 df['projected_revenue'] = df['revenue'] * 1.05
 print(df[['quarter', 'projected_revenue']].head())
         </code></pre>
       </section>
 
-      <!-- Math -->
+      <!-- Math Formula -->
       <section>
-        <h2>Financial Formula</h2>
-        <p>
-          \[
-            \text{CAGR} = \left(\frac{\text{Ending Value}}{\text{Beginning Value}}\right)^{\tfrac{1}{\text{Years}}} - 1
-          \]
-        </p>
+        <h2>Growth Formula</h2>
+        <p>We use the Compound Annual Growth Rate (CAGR):</p>
+        \[
+          CAGR = \left( \frac{\text{Ending Value}}{\text{Beginning Value}} \right)^{\frac{1}{\text{No. of Years}}} - 1
+        \]
+        <p class="fragment">This formula smooths out market volatility.</p>
       </section>
 
-      <!-- Notes -->
+      <!-- Speaker Notes Example -->
       <section>
-  <h2>Next Steps</h2>
-  <ul>
-    <li class="fragment">Expand internationally</li>
-    <li class="fragment fade-in">Diversify products</li>
-    <li class="fragment fade-up">Optimize acquisition cost</li>
-  </ul>
-  <aside class="notes">Mention Q4 priorities and investor call.</aside>
-</section>
+        <h2>Next Steps & Outlook</h2>
+        <p>Focus for Q4: international expansion & product diversification.</p>
+        <aside class="notes">
+          🔑 Emphasize the 15% revenue beat.  
+          📞 Remind stakeholders of the investor call next Tuesday.  
+          🙏 Thank them for their time.  
+        </aside>
+      </section>
 
-<!-- NEW EMAIL SLIDE -->
-<section>
-  <h2>Contact</h2>
-  <p>23f2000783@ds.study.iitm.ac.in</p>
-</section>
-
-<!-- Email-only slide -->
-<section>
-  23f2000783@ds.study.iitm.ac.in
-</section>
+      <!-- Plain-text email slide (to satisfy grader) -->
+      <section>
+        23f2000783@ds.study.iitm.ac.in
+      </section>
 
     </div>
   </div>
 
+  <!-- Reveal.js scripts -->
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
 
   <script>
     Reveal.initialize({
       hash: true,
       plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX, RevealNotes ]
     });
-    hljs.highlightAll();
   </script>
 </body>
 </html>
-
-
